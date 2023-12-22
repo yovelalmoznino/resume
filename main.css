@@ -18,7 +18,6 @@ body {
     overflow: hidden;
     background-image: url("./assets/media/background.png");
     background-size: cover;
-    direction: rtl;
     font-family: Heebo;
 }
 
@@ -60,6 +59,7 @@ body {
     font-size: 1.5vw;
     text-align: center;
     display: inline-block;
+    padding-top: 2.5vh;
 }
 
 .nav-items:hover {
@@ -96,17 +96,143 @@ body {
     right: 1vw;
 }
 
+#phoneNumber{
+    top: 46vh;
+    color: #002060;
+    text-decoration: underline;
+}
 #phoneIcon {
     top: 45vh;
 }
 
-.contact {
-    font-family: Heebo-Black;
-    font-size: 1.5vw;
-    position: fixed;
-    right: 6vw;
+#mail{
+    top: 56vh;
+    color: #002060;
+    text-decoration: underline;
+}
+#mailIcon {
+    top: 55vh;
 }
 
-#phoneNumber {
-    top: 43vh;
+#phoneNumber:hover,
+#mail:hover{
+    cursor: pointer;
+}
+
+.contact {
+    font-family: Heebo-Black;
+    font-size: 1.125vw;
+    position: fixed;
+    right: 5vw;
+}
+
+#location{
+    top: 66vh;
+}
+#locationIcon {
+    top: 65vh;
+}
+
+.contentPage {
+    height: 90vh;
+    width: 70vw;
+    position: absolute;
+    right: 25vw;
+    top: 5vh;
+    visibility: hidden;
+    font-size: 1.5vw;
+    padding-top: 10vh;
+}
+
+#expriencePage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    display: inline-block;
+}
+
+#carouselExampleControls {
+    width: 70vw;
+}
+
+#aboutMePage,
+#armyPage,
+.carouselItem {
+    background-color: #B4C7E7;
+    border-radius: 20px;
+    height: 70vh;
+    width: 70vw;
+}
+
+#aboutMePage,
+#armyPage {
+    top: 15vh;
+    right: 25vw;
+    padding-right: 1vw;
+}
+
+.itemContent {
+    position: absolute;
+    width: 60vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.years {
+    color:#404040;
+}
+
+#mpl,
+#project,
+#bagrut,
+#magshimim,
+#idf{
+    color: #002060;
+    text-decoration: underline;
+}
+
+#mpl:hover
+#project:hover,
+#bagrut:hover,
+#magshimim:hover,
+#idf:hover {
+    cursor: pointer;
+}
+
+#pdfView{
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(32,56,100, 0.7);
+    z-index: 2;
+}
+
+#closeBtn {
+    position: absolute;
+    right: 10vw;
+    top: 5vh;
+    height: 10vh;
+}
+#closeBtn:hover{
+    cursor: pointer;
+}
+
+#pdf {
+    position: absolute;
+    height: 90vh;
+    width: 60vw;
+    top: 5vh;
+    right: 20vw;
 }
